@@ -12,18 +12,19 @@ int binary_tree_balance(const binary_tree_t *tree)
 	int n;
 	size_t leftChild = 0;
 	size_t rightChild = 0;
-
-	if (tree && tree->left)
+	if (tree)
 	{
-		leftChild += 1;
-		leftChild += binary_tree_balance(tree->left);
+		if (tree->left)
+		{
+			leftChild += 1;
+			leftChild += binary_tree_balance(tree->left);
+		}
+		if (tree && tree->right)
+		{
+			rightChild += 1;
+			rightChild += binary_tree_balance(tree->right);
+		}
 	}
-
-	if (tree && tree->right)
-	{
-		rightChild += 1;
-		rightChild += binary_tree_balance(tree->right);
-	}
-	n = leftChild - rightChild;
-	return (n);
+		n = leftChild - rightChild;
+		return (n);
 }
