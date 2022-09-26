@@ -17,7 +17,6 @@ int binary_tree_balance(const binary_tree_t *tree)
 		Th = binary_tree_height(tree->left);
 		Tl = binary_tree_height(tree->right);
 	}
-	printf("d: %d - %d ", Th,Tl);
 	return (Th - Tl);
 }
 
