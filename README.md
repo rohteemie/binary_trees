@@ -5,6 +5,7 @@
 
 ### Description
 
+
 ### What students should learn from this project
 - What is a binary tree
 - What is the difference between a binary tree and a Binary Search Tree
@@ -13,7 +14,7 @@
 - What are the different traversal methods to go through a binary tree
 - What is a complete, a full, a perfect, a balanced binary tree
 
-#### Environment 
+#### Environment
 Ubuntu 20.04 LTS
 
 ## Table of Contents
