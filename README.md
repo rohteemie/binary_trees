@@ -72,12 +72,35 @@ git clone https://github.com/rohteemie/binary_trees.git
 cd binary_trees
 ```
 
-2. Compile a test program:
+2. Compile using the Makefile (recommended):
+```bash
+make 0-node
+build/0-node
+```
+
+Or compile manually:
 ```bash
 gcc -Wall -Werror -Wextra -pedantic -I include/ src/0-binary_tree_node.c src/binary_tree_print.c tests/0-main.c -o 0-node
 ```
 
 ## Usage
+
+### Using the Makefile
+
+The project includes a Makefile for easy compilation:
+
+```bash
+# Compile task 0
+make 0-node
+
+# Compile task 1
+make 1-left
+
+# Clean build artifacts
+make clean
+```
+
+### Example Code
 
 Example usage for creating a binary tree node:
 
@@ -96,10 +119,11 @@ int main(void)
 }
 ```
 
-Compile and run:
+Manual compilation and run:
 ```bash
-gcc -Wall -Werror -Wextra -pedantic -I include/ src/*.c tests/0-main.c -o 0-node
+gcc -Wall -Werror -Wextra -pedantic -I include/ src/0-binary_tree_node.c src/binary_tree_print.c tests/0-main.c -o 0-node
 ./0-node
+```
 ```
 
 ## Data Structures
