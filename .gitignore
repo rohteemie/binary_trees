@@ -1,0 +1,26 @@
+# Compiled Object files
+*.o
+*.obj
+
+# Executables
+*.exe
+*.out
+a.out
+
+# Swap files
+*.swp
+*.swo
+*~
+
+# Build directories
+build/
+bin/
+
+# Test executables
+*-test
+test-*
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.sublime-*
